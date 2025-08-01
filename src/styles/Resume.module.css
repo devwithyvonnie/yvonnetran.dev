@@ -1,0 +1,108 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .pageBackground {
+    background-color: #fff8f0; /* soft outer background */
+    padding: 3rem 1rem;
+    min-height: 100vh;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #c49e75;
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+  
+  .location {
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 0.3rem;
+  }
+  
+  .links {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .links a {
+    color: #a7c7e7;
+    text-decoration: none;
+    margin: 0 0.4rem;
+    font-weight: 500;
+  }
+  
+  .links a:hover {
+    color: #c49e75;
+  }
+  
+  .section {
+    margin: 2.5rem 0;
+    border-left: 4px solid #fadadd;
+    padding-left: 1rem;
+  }
+  
+  .section h3 {
+    font-size: 1.5rem;
+    color: #a7c7e7;
+    margin-bottom: 0.6rem;
+  }
+  
+  .section p {
+    margin: 0.6rem 0;
+  }
+  
+  .section ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .section li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .downloadWrap {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .download {
+    background-color: #a7c7e7;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .download:hover {
+    background-color: #c49e75;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .container {
+      padding: 2rem 1rem;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .section h3 {
+      font-size: 1.3rem;
+    }
+  }
+  

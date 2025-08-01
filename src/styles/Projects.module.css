@@ -1,0 +1,162 @@
+.pageBackground {
+  min-height: 100vh;
+  background-color: #fff8f0;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #c49e75;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+  align-items: start;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* FLIP CARD STYLES */
+
+.cardContainer {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 260px;
+  min-height: 360px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 0.5rem 1.2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #fadadd;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #a26769;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #5e5e5e;
+  margin-bottom: 0.5rem;
+}
+
+.caption {
+  font-size: 0.95rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-weight: 500;
+  color: #5e5e5e;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.link {
+  display: inline-block;
+  background-color: #fadadd;
+  color: #704264;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.link:hover {
+  background-color: #fbcfe8;
+  color: #a855f7;
+}
+
+/* Mobile-friendly tweaks */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    height: 300px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}

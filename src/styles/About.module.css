@@ -1,0 +1,76 @@
+.container {
+  padding: 2rem;
+    text-align: center;
+    background: linear-gradient(#fff8f0, #fadadd);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilePic {
+  width: 140px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.heading {
+  font-size: 2rem;
+  color: #c49e75;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+.bio a {
+  color: #a7c7e7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bio a:hover {
+  color: #c49e75;
+}
+
+.resumeCTA {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.resumeLink {
+  color: #a7c7e7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resumeLink:hover {
+  color: #c49e75;
+}
+
+ /* MOBILE FRIENDLY */
+ @media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}

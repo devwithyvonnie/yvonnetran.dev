@@ -1,22 +1,21 @@
-import React, { useState } from "react";
-import styles from "../styles/FlipCard.module.css";
+import { useState } from "react";
+import styles from "../styles/FlipCard.module.css"; // or adjust path if needed
 
-const FlipCard = ({ image, title, description, link, linkLabel }) => {
+function FlipCard({ image, title, description, link, linkLabel }) {
   const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
-  };
 
   return (
     <div
       className={`${styles.card} ${isFlipped ? styles.flipped : ""}`}
-      onClick={handleFlip}
+      onClick={() => setIsFlipped(!isFlipped)}
+      onKeyDown={(e) => e.key === "Enter" && setIsFlipped(!isFlipped)}
+      role="button"
+      tabIndex={0}
     >
       <div className={styles.inner}>
         <div className={styles.front}>
-          <img src={`/${image}`} alt={title} />
-          <p className={styles.caption}>✨ Tap to Reveal</p>
+          <img src={image} alt={title} />
+          <p className={styles.caption}>✨ Tap to reveal</p>
         </div>
         <div className={styles.back}>
           <h3>{title}</h3>
@@ -28,6 +27,6 @@ const FlipCard = ({ image, title, description, link, linkLabel }) => {
       </div>
     </div>
   );
-};
+}
 
 export default FlipCard;

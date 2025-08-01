@@ -12,7 +12,7 @@ const projects = [
     linkLabel: "🐾 View on GitHub",
   },
   {
-    image: "assets/spotify.png",
+    image: "/assets/spotify.png",
     title: "Spotify Search App",
     description:
       "A magical React app powered by Spotify’s API. Search for artists, tracks, and explore musical magic.",

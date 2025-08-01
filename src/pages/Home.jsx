@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from "../styles/Home.module.css";
-import shiba from "../assets/shiba.png";
+import shiba from "../public/assets/shiba.png";
 function Home() {
   return (
     <motion.div

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from "../styles/About.module.css";
-import profilePic from "../assets/profile.jpeg";
+import profilePic from "../public/assets/profile.jpeg";
 import { Link } from "react-router-dom";
 
 function About() {

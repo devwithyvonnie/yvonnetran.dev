@@ -4,7 +4,7 @@ import FlipCard from "../components/FlipCard";
 
 const projects = [
   {
-    image: "/assets/star-tracker.png",
+    image: "../public/assets/star-tracker.png",
     title: "Star Tracker Library",
     description:
       "Built for Full Sail University's Advanced Server-Side Languages course. Features routes, templates, external API integration, and logic tied to business rules.",
@@ -12,7 +12,7 @@ const projects = [
     linkLabel: "🐾 View on GitHub",
   },
   {
-    image: "/assets/spotify.png",
+    image: "../public/assets/spotify.png",
     title: "Spotify Search App",
     description:
       "A magical React app powered by Spotify’s API. Search for artists, tracks, and explore musical magic.",
@@ -20,7 +20,7 @@ const projects = [
     linkLabel: "🐾 View on GitHub",
   },
   {
-    image: "/assets/tbeauty.png",
+    image: "../public/assets/tbeauty.png",
     title: "T Beauty Lounge",
     description:
       "Live Medical Spa site built for T Beauty Lounge, showcasing services and booking info.",
@@ -28,7 +28,7 @@ const projects = [
     linkLabel: "🌐 Visit Site",
   },
   {
-    image: "/assets/tomo.png",
+    image: "../public/assets/tomo.png",
     title: "Tomo Japanese Cuisine",
     description:
       "A live restaurant site built for a local sushi spot in Arizona. Clean layout with local charm.",
@@ -36,7 +36,7 @@ const projects = [
     linkLabel: "🌐 Visit Site",
   },
   {
-    image: "/assets/portfolio.png",
+    image: "../public/assets/portfolio.png",
     title: "Portfolio Site",
     description:
       "The magical portfolio you’re looking at right now — React, Framer Motion, and a whole lot of whimsy.",

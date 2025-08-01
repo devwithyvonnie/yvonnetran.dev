@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import styles from "../styles/Projects.module.css";
 import FlipCard from "../components/FlipCard";
-import StarTracker from "../public/assets/star-tracker.png";
+import StarTracker from "../assets/star-tracker.png";
+import SpotifyImg from "../assets/spotify.png";
+import TBeautyImg from "../assets/tbeauty.png";
+import TomoImg from "../assets/tomo.png";
+import PortfolioImg from "../assets/portfolio.png";
+
 
 const projects = [
   {
@@ -13,7 +18,7 @@ const projects = [
     linkLabel: "🐾 View on GitHub",
   },
   {
-    image: "../public/assets/spotify.png",
+    image: SpotifyImg,
     title: "Spotify Search App",
     description:
       "A magical React app powered by Spotify’s API. Search for artists, tracks, and explore musical magic.",
@@ -21,7 +26,7 @@ const projects = [
     linkLabel: "🐾 View on GitHub",
   },
   {
-    image: "../public/assets/tbeauty.png",
+    image: TBeautyImg,
     title: "T Beauty Lounge",
     description:
       "Live Medical Spa site built for T Beauty Lounge, showcasing services and booking info.",
@@ -29,7 +34,7 @@ const projects = [
     linkLabel: "🌐 Visit Site",
   },
   {
-    image: "../public/assets/tomo.png",
+    image: TomoImg,
     title: "Tomo Japanese Cuisine",
     description:
       "A live restaurant site built for a local sushi spot in Arizona. Clean layout with local charm.",
@@ -37,7 +42,7 @@ const projects = [
     linkLabel: "🌐 Visit Site",
   },
   {
-    image: "../public/assets/portfolio.png",
+    image: PortfolioImg,
     title: "Portfolio Site",
     description:
       "The magical portfolio you’re looking at right now — React, Framer Motion, and a whole lot of whimsy.",

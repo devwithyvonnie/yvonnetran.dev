@@ -7,19 +7,12 @@ function FlipCard({ image, title, description, link, linkLabel }) {
   return (
     <div
       className={`${styles.card} ${isFlipped ? styles.flipped : ""}`}
-      onClick={() => setIsFlipped(!isFlipped)}
-      onKeyDown={(e) => e.key === "Enter" && setIsFlipped(!isFlipped)}
-      role="button"
-      tabIndex={0}
-    >
+      onClick={handleFlip}>
       <div className={styles.inner}>
-        {/* FRONT */}
         <div className={styles.front}>
           <img src={image} alt={title} />
           <div className={styles.caption}>✨ Tap to Reveal</div>
         </div>
-
-        {/* BACK */}
         <div className={styles.back}>
           <h3>{title}</h3>
           <p>{description}</p>
@@ -27,8 +20,7 @@ function FlipCard({ image, title, description, link, linkLabel }) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.link}
-          >
+            className={styles.link}>
             {linkLabel}
           </a>
         </div>

@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import styles from "../styles/Projects.module.css";
 import FlipCard from "../components/FlipCard";
+import StarTracker from "../public/assets/star-tracker.png";
 
 const projects = [
   {
-    image: "../public/assets/star-tracker.png",
+    image: StarTracker,
     title: "Star Tracker Library",
     description:
       "Built for Full Sail University's Advanced Server-Side Languages course. Features routes, templates, external API integration, and logic tied to business rules.",

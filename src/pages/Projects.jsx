@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import styles from "../styles/Projects.module.css";
 import FlipCard from "../components/FlipCard";
-import starTrackerImg from "../assets/star-tracker.png";
-import spotifyImg from "../assets/spotify.png";
-import tbeautyImg from "../assets/tbeauty.png";
-import tomoImg from "../assets/tomo.png";
-import portfolioImg from "../assets/portfolio.png";
+import starTrackerImg from ".../public/assets/star-tracker.png";
+import spotifyImg from ".../public/assets/spotify.png";
+import tbeautyImg from ".../public/assets/tbeauty.png";
+import tomoImg from ".../public/assets/tomo.png";
+import portfolioImg from ".../public/assets/portfolio.png";
 
 const projects = [
   {

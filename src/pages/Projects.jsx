@@ -14,32 +14,48 @@ const projects = [
     title: "Star Tracker Library",
     description:
       "Built for Full Sail University's Advanced Server-Side Languages course. Features routes, templates, external API integration, and logic tied to business rules.",
-    link: "https://github.com/tranyvonne-fs/ASL/tree/assignments/star-tracker-ui/star-tracker-ui",
-    linkLabel: "🐾 View on GitHub",
+    links: [
+      {
+        label: "🐾 View on GitHub",
+        url: "https://github.com/tranyvonne-fs/ASL/tree/assignments/star-tracker-ui/star-tracker-ui",
+      },
+    ],
   },
   {
     image: SpotifyImg,
     title: "Spotify Search App",
     description:
       "A magical React app powered by Spotify’s API. Search for artists, tracks, and explore musical magic.",
-    link: "https://github.com/tranyvonne-fs/tranyvonne_spotify_search_app",
-    linkLabel: "🐾 View on GitHub",
+    links: [
+      {
+        label: "🐾 View on GitHub",
+        url: "https://github.com/tranyvonne-fs/tranyvonne_spotify_search_app",
+      },
+    ],
   },
   {
     image: TBeautyImg,
     title: "T Beauty Lounge",
     description:
       "Live Medical Spa site built for T Beauty Lounge, showcasing services and booking info.",
-    link: "https://tbeautylounge.com",
-    linkLabel: "✨ Visit Site",
+    links: [
+      {
+        label: "✨ Visit Site",
+        url: "https://tbeautylounge.com",
+      },
+    ],
   },
   {
     image: TomoImg,
     title: "Tomo Japanese Cuisine",
     description:
       "A live restaurant site built for a local sushi spot in Arizona. Clean layout with local charm.",
-    link: "https://tomojapanesecuisines.com",
-    linkLabel: "✨ Visit Site",
+    links: [
+      {
+        label: "✨ Visit Site",
+        url: "https://tomojapanesecuisines.com",
+      },
+    ],
   },
   {
     image: "assets/portfolio.png",
@@ -56,7 +72,7 @@ const projects = [
         url: "https://yvonnetran.dev",
       },
     ],
-  },  
+  },
 ];
 
 function Projects() {

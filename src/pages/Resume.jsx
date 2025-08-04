@@ -1,18 +1,19 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import styles from "../styles/Resume.module.css";
 
 function Resume() {
   return (
     <div className={styles.pageBackground}>
       <motion.div
-    className={styles.container}
-    initial={{ opacity: 0, rotateY: -10 }}
-    animate={{ opacity: 1, rotateY: 0 }}
-    exit={{ opacity: 0, rotateY: 10 }}
-    transition={{ duration: 0.5, ease: "easeInOut" }}
-  >
+        className={styles.container}
+        initial={{ opacity: 0, rotateY: -10 }}
+        animate={{ opacity: 1, rotateY: 0 }}
+        exit={{ opacity: 0, rotateY: 10 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}>
         <h2 className={styles.heading}>Yvonne Tran</h2>
-        <p className={styles.location}>Goodyear, AZ · devwithyvonnie@gmail.com</p>
+        <p className={styles.location}>
+          Goodyear, AZ · devwithyvonnie@gmail.com
+        </p>
         <p className={styles.links}>
           <a href="https://yvonnetran.dev" target="_blank">
             yvonnetran.dev
@@ -22,7 +23,9 @@ function Resume() {
             GitHub
           </a>{" "}
           ·{" "}
-          <a href="https://linkedin.com/in/yvonne-tran-451858191" target="_blank">
+          <a
+            href="https://linkedin.com/in/yvonne-tran-451858191"
+            target="_blank">
             LinkedIn
           </a>
         </p>
@@ -59,17 +62,17 @@ function Resume() {
         <section className={styles.section}>
           <h3>Projects</h3>
           <p>
+            <strong>Star Tracker Library 🌌</strong>
+            <br />
+            Built for Full Sail University's Advanced Server-Side Languages
+            course. <em>React, Node.js</em>
+          </p>
+
+          <p>
             <strong>MagicTunes 🎵</strong>
             <br />
             Spotify-powered music discovery app with login and artist search.{" "}
             <em>React, Node.js, Spotify API</em>
-          </p>
-
-          <p>
-            <strong>TripTails ✈️</strong>
-            <br />
-            Automated travel email system with schedule-based delivery.{" "}
-            <em>Node.js, MongoDB, SendGrid</em>
           </p>
 
           <p>
@@ -100,7 +103,12 @@ function Resume() {
             <strong>Portfolio Website 🌸</strong>
             <br />
             Animated and responsive site for personal branding.{" "}
-            <em>React, Vite, CSS Modules</em>
+            <em>
+              React, Vite, CSS Modules -{" "}
+              <a href="https://tomojapanesecuisines.com" target="_blank">
+                Visit Site
+              </a>
+            </em>
           </p>
         </section>
 
@@ -143,10 +151,12 @@ function Resume() {
 
         <div className={styles.downloadWrap}>
           <a
-            href="/resume-yvonne-tran.pdf"
+            href="/Yvonne_Tran_Resume.pdf"
+            download
             target="_blank"
-            className={styles.download}>
-            Download PDF
+            rel="noopener noreferrer"
+            className="resume-download-button">
+            📄 Download Resume (PDF)
           </a>
         </div>
       </motion.div>

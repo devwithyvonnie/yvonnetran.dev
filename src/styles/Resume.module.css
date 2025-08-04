@@ -77,18 +77,19 @@
     margin-top: 3rem;
   }
   
-  .download {
-    background-color: #a7c7e7;
-    color: white;
+  .resume-download-button {
+    background-color: #e4c1f9;
+    color: #4b0082;
     padding: 0.6rem 1.2rem;
-    border-radius: 10px;
-    font-weight: bold;
+    border-radius: 999px;
     text-decoration: none;
-    transition: background-color 0.2s ease;
+    font-weight: bold;
+    transition: background 0.3s ease;
   }
   
-  .download:hover {
-    background-color: #c49e75;
+  .resume-download-button:hover {
+    background-color: #d0a9f5;
+    color: #fff;
   }
   
   /* Responsive tweaks */

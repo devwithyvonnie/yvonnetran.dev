@@ -6,7 +6,7 @@ function FlipCard({ image, title, description, links }) {
       <img src={image} alt={title} className={styles.image} />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
-      {Array.isArray(links) && (
+      {Array.isArray(links) && links.length > 0 && (
         <div className={styles.links}>
           {links.map((l, i) => (
             <a

@@ -6,18 +6,20 @@ function FlipCard({ image, title, description, links }) {
       <img src={image} alt={title} className={styles.image} />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
-      <div className={styles.links}>
-        {links.map((l, i) => (
-          <a
-            key={i}
-            href={l.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.link}>
-            {l.label}
-          </a>
-        ))}
-      </div>
+      {Array.isArray(links) && (
+        <div className={styles.links}>
+          {links.map((l, i) => (
+            <a
+              key={i}
+              href={l.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}>
+              {l.label}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

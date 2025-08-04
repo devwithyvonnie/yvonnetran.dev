@@ -36,6 +36,16 @@
   margin-bottom: 0.75rem;
 }
 
+/* Wrapper for multiple links */
+.links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+/* Individual button */
 .link {
   color: #7a3e65;
   text-decoration: none;

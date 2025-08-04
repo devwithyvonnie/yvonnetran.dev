@@ -64,7 +64,7 @@ const projects = [
     links: [
       {
         label: "🐾 GitHub",
-        url: "https://github.com/tranyvonne-fs/portfolio",
+        url: "https://github.com/devwithyvonnie/yvonnetran.dev",
       },
       {
         label: "✨ Live Site",

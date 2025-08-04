@@ -14,7 +14,7 @@ const projects = [
     title: "Star Tracker Library",
     description:
       "Built for Full Sail University's Advanced Server-Side Languages course. Features routes, templates, external API integration, and logic tied to business rules.",
-    link: "https://github.com/tranyvonne-fs/ASL/tree/assignments/star-tracker-ui",
+    link: "https://github.com/tranyvonne-fs/ASL/tree/assignments/star-tracker-ui/star-tracker-ui",
     linkLabel: "🐾 View on GitHub",
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     description:
       "Live Medical Spa site built for T Beauty Lounge, showcasing services and booking info.",
     link: "https://tbeautylounge.com",
-    linkLabel: "🌐 Visit Site",
+    linkLabel: "✨ Visit Site",
   },
   {
     image: TomoImg,
@@ -39,16 +39,24 @@ const projects = [
     description:
       "A live restaurant site built for a local sushi spot in Arizona. Clean layout with local charm.",
     link: "https://tomojapanesecuisines.com",
-    linkLabel: "🌐 Visit Site",
+    linkLabel: "✨ Visit Site",
   },
   {
-    image: PortfolioImg,
+    image: "assets/portfolio.png",
     title: "Portfolio Site",
     description:
       "The magical portfolio you’re looking at right now — React, Framer Motion, and a whole lot of whimsy.",
-    link: "#",
-    linkLabel: "✨ Explore",
-  },
+    links: [
+      {
+        label: "🐾 GitHub",
+        url: "https://github.com/tranyvonne-fs/portfolio",
+      },
+      {
+        label: "✨ Live Site",
+        url: "https://yvonnetran.dev",
+      },
+    ],
+  },  
 ];
 
 function Projects() {

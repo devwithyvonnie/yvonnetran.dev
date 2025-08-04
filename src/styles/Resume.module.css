@@ -77,20 +77,27 @@
     margin-top: 3rem;
   }
   
-  .resume-download-button {
-    background-color: #e4c1f9;
-    color: #4b0082;
-    padding: 0.6rem 1.2rem;
+  .download {
+    background-color: #fadadd;
+    color: #704264;
+    padding: 0.6rem 1.4rem;
     border-radius: 999px;
-    text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s ease;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   }
   
-  .resume-download-button:hover {
-    background-color: #d0a9f5;
-    color: #fff;
+  .download:hover {
+    background-color: #fbcfe8;
+    color: #a855f7;
+    border-color: #a855f7;
+    transform: translateY(-2px);
   }
+  
   
   /* Responsive tweaks */
   @media (max-width: 768px) {

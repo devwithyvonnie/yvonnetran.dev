@@ -155,8 +155,8 @@ function Resume() {
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="resume-download-button">
-            📄 Download Resume (PDF)
+            className={styles.download}>
+            🌸 Download Resume (PDF)
           </a>
         </div>
       </motion.div>

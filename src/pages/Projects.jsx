@@ -7,7 +7,6 @@ import TBeautyImg from "../public/assets/tbeauty.png";
 import TomoImg from "../public/assets/tomo.png";
 import PortfolioImg from "../public/assets/portfolio.png";
 
-
 const projects = [
   {
     image: StarTracker,
@@ -83,8 +82,7 @@ function Projects() {
         initial={{ opacity: 0, rotateY: -10 }}
         animate={{ opacity: 1, rotateY: 0 }}
         exit={{ opacity: 0, rotateY: 10 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
+        transition={{ duration: 0.5, ease: "easeInOut" }}>
         <h2 className={styles.title}>✨ Featured Projects ✨</h2>
         <div className={styles.grid}>
           {projects.map((project, index) => (
@@ -92,14 +90,14 @@ function Projects() {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
+              transition={{ delay: index * 0.1 }}>
               <FlipCard
                 image={project.image}
                 title={project.title}
                 description={project.description}
                 link={project.link}
                 linkLabel={project.linkLabel}
+                links={project.links}
               />
             </motion.div>
           ))}

@@ -58,7 +58,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/portfolio.png",
+    image: PortfolioImg,
     title: "Portfolio Site",
     description:
       "The magical portfolio you’re looking at right now — React, Framer Motion, and a whole lot of whimsy.",
